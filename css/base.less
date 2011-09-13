@@ -1,0 +1,32 @@
+/* dotLESS functions 
+----------------------------------------------------------------------------------------------------*/
+.less-gradient-linear(@from: #000, @to: #fff) {
+    background: @from; /* Old browsers */
+    background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+    background-image: -moz-linear-gradient(top, @from, @to);
+	background: linear-gradient(top, @from, @to);
+    filter: formatstring("\"progid:DXImageTransform.Microsoft.gradient(startColorstr='{0}', endColorstr='{1}')\"", @from, @to); /* IE6,IE7 */
+    -ms-filter: formatstring("\"progid:DXImageTransform.Microsoft.gradient(startColorStr='{0}', EndColorStr='{1}')\"", @from, @to); /* IE8 */
+}
+
+.less-opacity(@opacity: 100) {
+    opacity: @opacity/100;
+    filter: alpha(opacity=@opacity); /* IE7 */
+	-ms-filter: formatstring("\"progid:DXImageTransform.Microsoft.Alpha(Opacity={0})\"", @opacity); /* IE8 */
+}
+
+.less-transition(@what: all, @length: 1s, @easing: ease) { 
+	-webkit-transition: @what @length @easing;
+	   -moz-transition: @what @length @easing;
+	    -ms-transition:	@what @length @easing;
+	     -o-transition: @what @length @easing;
+		  	transition: @what @length @easing;			
+}
+
+.less-transform(@params) {
+	-webkit-transform: @params;
+  	   -moz-transform: @params;
+  	    -ms-transform: @params;
+	    -o-transition: @params;
+  	        transform: @params;
+}
