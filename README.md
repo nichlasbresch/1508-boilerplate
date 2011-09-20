@@ -2,5 +2,3 @@
 
 Designed to work with dotLESS.
 The original lesscss.org also works after some small tweaks.
-peter tester
-peter tester fra desktop
