@@ -30,3 +30,38 @@
 	    -o-transition: @params;
   	        transform: @params;
 }
+
+.less-color-hsla(@hex: #ffffff, @alpha: 0.6) {
+	color: @hex;
+	color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-background-hsla(@hex: #ffffff, @alpha: 0.6) {
+	background-color: @hex;
+	background-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-border-hsla(@hex: #ffffff, @alpha: 0.6) {
+	border-color: @hex;
+	border-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-border-top-hsla(@hex: #ffffff, @alpha: 0.6) {
+	border-top-color: @hex;
+	border-top-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-border-right-hsla(@hex: #ffffff, @alpha: 0.6) {
+	border-right-color: @hex;
+	border-right-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-border-bottom-hsla(@hex: #ffffff, @alpha: 0.6) {
+	border-bottom-color: @hex;
+	border-bottom-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
+
+.less-border-left-hsla(@hex: #ffffff, @alpha: 0.6) {
+	border-left-color: @hex;
+	border-left-color: hsla(hue(@hex), saturation(@hex), lightness(@hex),  @alpha);
+}
