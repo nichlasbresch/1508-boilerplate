@@ -1,0 +1,164 @@
+/*
+                                                                        
+	  _|  _|_|_|_|    _|      _|_|          _|_|_|            _|        _|  
+	_|_|  _|        _|  _|  _|    _|      _|        _|  _|_|        _|_|_|  
+	  _|  _|_|_|    _|  _|    _|_|        _|  _|_|  _|_|      _|  _|    _|  
+	  _|        _|  _|  _|  _|    _|      _|    _|  _|        _|  _|    _|  
+	  _|  _|_|_|      _|      _|_|          _|_|_|  _|        _|    _|_|_|
+
+	
+	IE7+ fixed width grid system.
+	Usage: .container_12 > grid g1/g2/g3...
+	Tools: .clearfix, .clear, p1/p2/p3/p4 (push)
+*/
+
+/* http://nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+
+/* http://sonspring.com/journal/clearing-floats */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+
+body {
+  min-width: 1010px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container_12 {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1010px;
+}
+
+/* Grid >> Global
+----------------------------------------------------------------------------------------------------*/
+
+.grid {
+	display:inline;
+	float: left;
+	position: relative;
+	margin-left: 10px;
+}
+
+/* Grid >> Children (first)
+----------------------------------------------------------------------------------------------------*/
+.grid.g12,
+.grid.first,
+.grid:first-child {
+	margin-left: 0;
+}
+
+/* Grid >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+.container_12 .g1 {
+	width:75px;
+}
+
+.container_12 .g2 {
+	width:160px;
+}
+
+.container_12 .g3 {
+	width:245px;
+}
+
+.container_12 .g4 {
+	width:330px;
+}
+
+.container_12 .g5 {
+	width:415px;
+}
+
+.container_12 .g6 {
+	width:500px;
+}
+
+.container_12 .g7 {
+	width:585px;
+}
+
+.container_12 .g8 {
+	width:670px;
+}
+
+.container_12 .g9 {
+	width:755px;
+}
+
+.container_12 .g10 {
+	width:840px;
+}
+
+.container_12 .g11 {
+	width:925px;
+}
+
+.container_12 .g12 {
+	width:1010px;
+}
+
+/* Prefix Extra Space >> 12 Columns
+----------------------------------------------------------------------------------------------------*/
+
+.container_12 .p1 {
+	padding-left:85px;
+}
+
+.container_12 .p2 {
+	padding-left:170px;
+}
+
+.container_12 .p3 {
+	padding-left:255px;
+}
+
+.container_12 .p4 {
+	padding-left:340px;
+}
+
+.container_12 .p5 {
+	padding-left:425px;
+}
+
+.container_12 .p6 {
+	padding-left:510px;
+}
+
+.container_12 .p7 {
+	padding-left:595px;
+}
+
+.container_12 .p8 {
+	padding-left:680px;
+}
+
+.container_12 .p9 {
+	padding-left:765px;
+}
+
+.container_12 .p10 {
+	padding-left:850px;
+}
+
+.container_12 .p11 {
+	padding-left:935px;
+}
