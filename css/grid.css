@@ -55,6 +55,9 @@ body {
 	display:inline;
 	float: left;
 	position: relative;
+}
+
+.grid + .grid {
 	margin-left: 10px;
 }
 
