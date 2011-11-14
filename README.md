@@ -1,6 +1,6 @@
 # 1508 Boilerplate + 1508 Grid
 -------
-Our starting boilerplate for new projects. keep it simple! We target IE7+ and all "grade A" browsers.
+Starting boilerplate for new projects. keep it simple! We target IE7+ and all "grade A" browsers.
+Designed to work with dotLESSCSS.org - but can easily be replaced with the orginal LESSCSS.org project.
 
 1508 / Design in Love with Technology
-----------
