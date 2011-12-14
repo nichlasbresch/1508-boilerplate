@@ -1,22 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8" />
 	<title>1508 boilerplate</title>
-	<link rel="stylesheet" type="text/css" href="css/reset.css" media="all" />
-	<link rel="stylesheet" type="text/css" href="css/grid.css" media="all" />
 	
-	<!-- Based on dotLESSCSS.org -->
-	<link rel="stylesheet" type="text/css" href="css/style.less" media="all" />
+	<!-- Remove no-js enable html5 elemetns -->
+	<script type="text/javascript">
+		//Clear no-js
+		document.getElementsByTagName('html')[0].className = document.getElementsByTagName('html')[0].className.replace('no-js','');
+		//Enable html5 elements in IE
+		'article aside footer header nav section time'.replace(/\w+/g,function(n){document.createElement(n)});
+	</script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/grid.css" />
+
+	<!-- LESSCSS.org -->
+	<link rel="stylesheet/less" type="text/css" href="css/style.less" />
+	<script type="text/javascript" src="js/less-1.1.5.min.js"></script>
 </head>
-<!--[if IE 7]> <body class="no-js ie7 ie ieOld"> <![endif]-->
-<!--[if IE 8]> <body class="no-js ie8 ie ieOld"> <![endif]-->
-<!--[if IE 9]> <body class="no-js ie9 ie"> <![endif]-->
-<!--[if gt IE 9]><!--> <body class="no-js"> <!--<![endif]-->
-	
+<body>	
 	<!-- Begin HTML awesomeness -->
 	
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
